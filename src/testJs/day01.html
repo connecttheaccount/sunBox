@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js测试</title>
+    <!-- 可以写书外部的js文件中,可以在不同的页面中引用-->
+    <script src="test01.js">
+        alert("我是内部")
+    </script>
+    <script>
+        <!-- 警告弹窗 -->
+        alert("测试");
+        <!-- document 想body中写入文字-->
+        document.write("写入成功")
+        /**
+         * 向控制台输出一个内容
+         *
+         */
+        console.log("你猜")
+        var a="1234567890";
+        alert(a);
+        document.write(a);
+        console.log(a);
+    </script>
+</head>
+<body>
+    <!-- 可以将js代码编写到标签onclick属性中，当我们点击按钮时js才会执行-->
+    <button onclick="alert('点击测试')">点我一下</button>
+    <!-- 也可以写在href超链接中-->
+    <!-- 在js中使用var定义变量-->
+    <form action="www.yantingchun.top">
+        <input type="text" value="用户名"><br>
+        <input type="text" value="密码"><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
